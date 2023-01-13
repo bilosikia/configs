@@ -1,0 +1,7 @@
+alias mp="git checkout master && git pull -r"
+alias gl="git log"
+alias gs="git status"
+alias gaa="git add --all"
+alias gcan="git commit --amend --no-edit"
+alias cb="git checkout"
+
