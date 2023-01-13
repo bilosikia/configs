@@ -1,0 +1,30 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+set keep-english-in-normal enable auto-switch
+set surround
+set NERDTree
+set scrolloff=5
+set highlightedyank
+let g:highlightedyank_highlight_color = "rgba(160, 160, 160, 155)"
+
+""" Mappings --------------------------------
+map <leader>a <Action>(Annotate)
+map <leader>s <Action>(SelectInProjectView)
+map <leader>r <Action>(RenameElement)
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map <S-Space> <Action>(GotoNextError)
+map <leader>t <Action>(ActivateTerminalToolWindow)
+map <leader>h <Action>(CIDR.Lang.SwitchHeaderSource)
+
+nnoremap fj :action MethodDown<CR>
+nnoremap fk :action MethodUp<CR>
+
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+nnoremap g; :action JumpToLastChange<Enter>
+nnoremap g, :action JumpToNextChange<Enter>
+
+nnoremap P "0p
